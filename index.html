@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="This is a library app for the odin project, made by cgathua">
+    <title>Library App Test</title>
+   <!--LINKED STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+    <!--LINKED JAVASCRIPT FILE-->
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Library</h1>
+        </header>
+        <section id="form">
+            <form action="contact-form" aria-label="contact-form">
+                <fieldset>
+                    <label for="title">Title <input id="title" type="text" aria-label="legal name" required></label>
+                    <label for="author">Author <input id="author" type="text" aria-label="legal name"
+                        title="first and last name, separated by a gap" pattern="(^[a-zA-Z]{1,15} [a-zA-Z]{1,15}$)"
+                        required="full name">
+                    </label>
+                    <label for="pages">Pages <input id="pages" type="number" aria-label="pages" min="1" max="2000" required></label>
+                    <label for="read" aria-label="read status">Have you Read The Book?
+                        <input type="checkbox" name="checkbox" id="read">
+                    </label>
+                </fieldset>
+                <input type="submit" id="submit" value="Add New Book" aria-label="click button">
+            </form>
+            <!--END OF FORM-->
+        </section>
+        
+        <section id="table">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                </tr>
+                <tr>
+                    <td>To Kill A Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>281</td>
+                    <td>Not Read</td>
+                    <td><button class="btn">Best Seller</button></td>
+                </tr>
+                <tr>
+                    <td>Fahrenheit 451</td>
+                    <td>Ray Bradbury</td>
+                    <td>156</td>
+                    <td>Read</td>
+                    <td><button class="btn">Best Seller</button></td>
+                </tr>
+                <tr>
+                    <td>Beloved</td>
+                    <td>Toni Morrison</td>
+                    <td>324</td>
+                    <td>Read</td>
+                    <td><button class="btn">Best Seller</button></td>
+                </tr>
+                <tbody id="table_body"></tbody>
+            </table>
+            <!--END OF TABLE-->
+        </section>
+
+    </main>
+    <!--END OF MAIN DOCUMENT-->
+</body>
+
+</html>
